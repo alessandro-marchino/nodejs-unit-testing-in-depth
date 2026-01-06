@@ -1,4 +1,4 @@
-export function getURL(){
+module.exports.getURL = () => {
   if (process.env.NODE_ENV === 'production') {
     return 'mongodb://localhost:27017/real_db'
   }
