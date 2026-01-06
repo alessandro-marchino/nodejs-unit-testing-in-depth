@@ -16,6 +16,9 @@
   },
   "description": "",
   "devDependencies": {
+    "@types/chai-as-promised": "^8.0.2",
+    "@types/sinon": "^21.0.0",
+    "@types/sinon-chai": "^4.0.0",
     "chai": "^6.2.2",
     "chai-as-promised": "^8.0.2",
     "cross-env": "^10.1.0",
