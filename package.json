@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=development mocha \"./{,!(node_modules)/**/}*.spec.js\" --exit",
+    "test": "cross-env NODE_ENV=development mocha \"./{,!(node_modules)/**/}*.spec.{js,mjs}\" --exit",
     "test2": "mocha \"./tests/**/*.js\" --recursive",
     "coverage": "cross-env NODE_ENV=development nyc --reporter=text npm test"
   },
@@ -20,7 +20,7 @@
     "chai-as-promised": "^8.0.2",
     "cross-env": "^10.1.0",
     "istanbul": "^0.4.5",
-    "mocka": "^0.0.1",
+    "mocha": "^11.7.5",
     "nyc": "^17.1.0",
     "rewire": "^9.0.1",
     "sinon": "^21.0.1",
