@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cross-env NODE_ENV=development mocha \"./{,!(node_modules)/**/}*.spec.{js,cjs,mjs}\" --exit",
-    "test2": "mocha \"./tests/**/*.js\" --recursive",
-    "coverage": "cross-env NODE_ENV=development nyc --reporter=text npm test"
+    "coverage": "cross-env NODE_ENV=development nyc --reporter=text --all npm test"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +12,10 @@
     "body-parser": "^2.2.1",
     "express": "^5.2.1",
     "mongoose": "^9.1.2"
+  },
+  "nyc": {
+    "include": "lib/**/*.js",
+    "exclude": "lib/**/*.spec.js"
   },
   "description": "",
   "devDependencies": {
